@@ -31,5 +31,5 @@ modules:
         sha256: be24791ad547e2f4e7c426e2ad522bb5478e312dbfbef67109514cbf2257b3c1
         dest: bundle
       - type: file
-        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/f4281dacc49782ca0e034fc246240811e23625a2/data/com.expidusos.file_manager.metainfo.xml
-        sha256: 745db20795ff33999f444f4efefcacd2d868e1ed40b1432034d2e31428178281
+        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/eb22ad73dcfc856e86298604bdc7ce18f4045740/data/com.expidusos.file_manager.metainfo.xml
+        sha256: 49fb0c5425951ee43922b817598ef043aed798daaee0acffc6fee117c9345e18
