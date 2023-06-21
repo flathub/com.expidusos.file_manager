@@ -20,16 +20,20 @@ modules:
       - cp -R bundle /app/expidus_file_manager
       - mkdir -p /app/bin && ln -s /app/expidus_file_manager/file_manager /app/bin/file_manager
       - chmod +x /app/bin/file_manager
-      - install -D bundle/data/com.expidusos.file_manager.desktop /app/share/applications/com.expidusos.file_manager.desktop
-      - install -D com.expidusos.file_manager.metainfo.xml /app/share/metainfo/com.expidusos.file_manager.metainfo.xml
-      - install -D bundle/data/com.expidusos.file_manager.png /app/share/icons/hicolor/256x256/apps/com.expidusos.file_manager.png
+      - mkdir -p /app/expidus_file_manager/lib && mv /app/expidus_file_manager/*.so /app/expidus_file_manager/lib
+      - mkdir -p /app/expidus_file_manager/data
+      - mv /app/expidus_file_manager/flutter_assets /app/expidus_file_manager/data/flutter_assets
+      - mv /app/expidus_file_manager/icudtl.dat /app/expidus_file_manager/data/icudtl.dat
+      - install -D /app/expidus_file_manager/com.expidusos.file_manager.desktop /app/share/applications/com.expidusos.file_manager.desktop
+      - install -D /app/expidus_file_manager/com.expidusos.file_manager.metainfo.xml /app/share/metainfo/com.expidusos.file_manager.metainfo.xml
+      - install -D /app/expidus_file_manager/com.expidusos.file_manager.png /app/share/icons/hicolor/256x256/apps/com.expidusos.file_manager.png
     sources:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/ExpidusOS/file-manager/releases/download/0.1.2/com.expidusos.file_manager-linux-x64.tar.gz
-        sha256: be24791ad547e2f4e7c426e2ad522bb5478e312dbfbef67109514cbf2257b3c1
+        url: https://github.com/ExpidusOS/file-manager/releases/download/0.2.0/com.expidusos.file_manager-linux-x64.zip
+        sha256: 5e1e6a3228b27e1d76ac16da926e7210f2bee5497b232353b16aac176e611ebe
         dest: bundle
       - type: file
-        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/eb22ad73dcfc856e86298604bdc7ce18f4045740/data/com.expidusos.file_manager.metainfo.xml
-        sha256: 49fb0c5425951ee43922b817598ef043aed798daaee0acffc6fee117c9345e18
+        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/45e724932a528b5a83498a84486b201958252b1e/data/com.expidusos.file_manager.metainfo.xml
+        sha256: 91aa6925a1ea111807cc928b1376d58a0227eb0e7af07a0f98d42729c002e60e
