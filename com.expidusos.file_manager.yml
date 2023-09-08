@@ -1,6 +1,6 @@
 app-id: com.expidusos.file_manager
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 separate-locales: false
 command: file_manager
@@ -31,9 +31,9 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/ExpidusOS/file-manager/releases/download/0.2.0/com.expidusos.file_manager-linux-x64.zip
-        sha256: 5e1e6a3228b27e1d76ac16da926e7210f2bee5497b232353b16aac176e611ebe
+        url: https://github.com/ExpidusOS/file-manager/releases/download/0.2.1/com.expidusos.file_manager-linux-x64.zip
+        sha256: 20b2edfb0a3efa9662405921ce99bfde70b3ee00c6d4ed51413708066232bdab
         dest: bundle
       - type: file
-        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/f41b043a83ed4d53842d5a8993047b4ae3d34926/data/com.expidusos.file_manager.metainfo.xml
-        sha256: 13c2153ffbb7d09592396d257de95d55777caeb69c2152756f4e018025ca9d71
+        url: https://raw.githubusercontent.com/ExpidusOS/file-manager/54227f83026c804b17ea9792cb544a6535a5140c/data/com.expidusos.file_manager.metainfo.xml
+        sha256: 60dce2e0cdfaf60cb824730d921b6a895d80981cecee15586fa7244764324bed
