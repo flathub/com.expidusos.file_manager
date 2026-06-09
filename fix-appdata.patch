@@ -1,0 +1,41 @@
+From 2b181b82d759cdeabeeaebc23cf547c67afffaf8 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 9 Jun 2026 12:56:01 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+- Fix the circular-component-relation error
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ com.expidusos.file_manager.metainfo.xml | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+
+diff --git a/com.expidusos.file_manager.metainfo.xml b/com.expidusos.file_manager.metainfo.xml
+index 72df2a5..6e4d3f1 100644
+--- a/com.expidusos.file_manager.metainfo.xml
++++ b/com.expidusos.file_manager.metainfo.xml
+@@ -163,11 +163,11 @@
+     </release>
+   </releases>
+   
+-  <supports>
++  <recommends>
+     <control>pointing</control>
+     <control>keyboard</control>
+     <control>touch</control>
+-  </supports>
++  </recommends>
+ 
+   <requires>
+     <display_length>600</display_length>
+@@ -187,7 +187,4 @@
+   </description>
+   
+   <launchable type="desktop-id">com.expidusos.file_manager.desktop</launchable>
+-  <provides>
+-    <id>com.expidusos.file_manager</id>
+-  </provides>
+ </component>
+--
+libgit2 1.7.2
+
